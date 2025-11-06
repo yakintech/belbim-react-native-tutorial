@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+let countries = ['USA', 'Canada', 'Mexico'];
+let newCountries = ['Brazil', ...countries];
+//böylelikle newCountries array yeni bir reference ile oluşturulmuş olur ve
+// orijinal countries array'ine bağlı OLMAZ.
+
+console.log(newCountries); // Output: ['Brazil', 'USA', 'Canada', 'Mexico']
+
+</script>
+</html>

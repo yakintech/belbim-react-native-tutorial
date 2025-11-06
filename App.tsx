@@ -22,7 +22,9 @@ const App = () => {
     description: "The Photon Camera X100 is a state-of-the-art camera that captures stunning photos with its 50MP sensor and advanced image processing technology."
   }
 
-  return <SafeAreaView>
+  return <SafeAreaView
+    style={{ flex: 1 }}
+  >
     {/* <UserBio
       userImageUrl="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
       name="John"
