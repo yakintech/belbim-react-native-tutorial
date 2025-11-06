@@ -42,6 +42,13 @@ const FlatListFilterSample = () => {
             />
         </View>
 
+        <View
+            style={{ borderBottomWidth: 1, borderBottomColor: '#ccc', marginBottom: 10 }}
+        >
+            <Text
+                style={{ fontSize: 24, fontWeight: 'bold', margin: 10 }}
+            >Length: {orders.length}</Text>
+        </View>
         <FlatList
             data={orders}
             renderItem={renderItem}

@@ -22,6 +22,7 @@ const App = () => {
   }
 
   return <SafeAreaView
+    style={{ flex: 1 }}
   >
     {/* <UserBio
       userImageUrl="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
