@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import dayjs from 'dayjs'
 
 //günlük su takibi uygulaması örneği
-const BasicStateSample = () => {
+const WaterHistorySample = () => {
 
     const [waterCounter, setWaterCounter] = useState(0)
     const [waterHistory, setwaterHistory] = useState<any[]>([])
@@ -103,4 +103,4 @@ const BasicStateSample = () => {
     </>
 }
 
-export default BasicStateSample
+export default WaterHistorySample
