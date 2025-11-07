@@ -1,6 +1,8 @@
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import FlatListFilterSample from './src/stateSample/FlatListFilterSample'
+import LifeCycle from './src/lifeCycle/LifeCycle'
+import LifeCycyle2 from './src/lifeCycle/LifeCycyle2'
 
 
 const App = () => {
@@ -48,7 +50,7 @@ const App = () => {
       }}
     /> */}
 
-    <FlatListFilterSample />
+    <LifeCycyle2 />
 
 
   </SafeAreaView>
