@@ -1,8 +1,6 @@
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import FlatListFilterSample from './src/stateSample/FlatListFilterSample'
-import LifeCycle from './src/lifeCycle/LifeCycle'
-import LifeCycyle2 from './src/lifeCycle/LifeCycyle2'
+import ProductDetail from './src/axiosFetchSample/ProductDetail'
 
 
 const App = () => {
@@ -24,7 +22,7 @@ const App = () => {
   }
 
   return <SafeAreaView
-    style={{ flex: 1 }}
+  
   >
     {/* <UserBio
       userImageUrl="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
@@ -50,7 +48,7 @@ const App = () => {
       }}
     /> */}
 
-    <LifeCycyle2 />
+    <ProductDetail />
 
 
   </SafeAreaView>
