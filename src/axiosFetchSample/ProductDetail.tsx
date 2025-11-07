@@ -1,22 +1,36 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native'
 import React, { useState } from 'react'
 
 const ProductDetail = () => {
 
     const [searchById, setsearchById] = useState("")
     const [detail, setdetail] = useState<any>({})
+    const [loading, setloading] = useState(false)
 
 
     const search = () => {
         let id = parseInt(searchById)
+        setloading(true)
 
-        fetch("https://northwind.vercel.app/api/products/" + id)
-            .then(res => res.json())
-            .then(data => {
-                setdetail(data)
-            })
+
+        setTimeout(() => {
+            fetch("https://northwind.vercel.app/api/products/" + id)
+                .then(res => res.json())
+                .then(data => {
+                    setdetail(data)
+                    setloading(false)
+                })
+                .catch(err => {
+                    setloading(false)
+                })  
+        }, 2000);
 
     }
+
+    if(loading)
+        return <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+            <ActivityIndicator size={"large"} color="blue" />
+        </View>
 
 
     return <View>
